@@ -1,0 +1,105 @@
+.input-design{
+    border-radius: 6px;
+    // --highlight-background: transparent;
+    --background:#2196f31c;;
+    // box-shadow: 0px 0px 8px #68bfbb;
+    margin: 6px 0px 20px;
+    height: 40px;
+}
+ion-label{
+    color: #9aafaf9c;
+}
+span{
+    float: right;
+    color: #03a9f4a6;
+    font-size: 13px;
+}
+.login-col{
+    text-align: center;
+}
+.login-btn{
+    padding: 4px 0px;
+    width: 119px;
+    --background: blue;
+    font-size: 10px;
+    --border-radius:12px;
+    height: 33px;
+}
+.login2-btn{
+    font-size: 11px;
+    --border-radius: 17px;
+    font-size: 9px;
+    height: 31px;
+    width: 130px;
+}
+.google-img{
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.left-button{
+    text-align: end;
+
+}
+.right-button{
+    text-align: left;
+
+}
+.main-div{
+  position: relative;
+}
+.ractangle-icon{
+    position: absolute;
+    right: 328px;
+    height: 222px;
+
+}
+@media only screen and (max-width: 399px) {
+    .ractangle-icon{
+        right: 320px;
+  }
+}
+@media only screen and (max-width: 370px) {
+    .ractangle-icon{
+        right: 311px;
+  }
+}
+@media only screen and (max-width: 358px) {
+    .ractangle-icon{
+        right: 303px;
+  }
+}
+@media only screen and (max-width: 348px) {
+    .ractangle-icon{
+        right: 290px;
+  }
+}
+@media only screen and (max-width: 333px) {
+    .ractangle-icon{
+        right: 280px;
+  }
+}
+@media only screen and (max-width: 325px) {
+    .ractangle-icon{
+        right: 267px;
+  }
+}
+.third-imgg{
+    height: 182px;
+    position: absolute;
+    right: 0px;
+    top: 11px;
+}
+h6{
+    font-weight: 700;
+    text-align: center;
+}
+.register-col{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+b{
+    font-weight: bold;
+    color: #4b8cff;
+}

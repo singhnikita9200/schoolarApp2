@@ -6,7 +6,22 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+    children:[
+      {
+        path: 'profile',
+        loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+      },
+      {
+        path: 'wallet',
+        loadChildren: () => import('./wallet/wallet.module').then( m => m.WalletPageModule)
+      },
+      {
+        path: 'category',
+        loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
+      }
+    ]
+  },
+  
 ];
 
 @NgModule({
