@@ -26,3 +26,44 @@ padding-top: 20px;
     height: 216px;
     border-radius: 16px;
 }
+
+.left-div{
+    background-color: #03a9f42e;
+    margin-left: 19px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.right-div{
+    background-color: #03a9f42e;
+    margin-left: 29px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.design-img{
+    height: 20px;
+    position: relative;
+}
+.p-design{
+    font-family: inherit;
+    color: #000000c9;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.second-p{
+    font-size: 12px;
+    font-family: inherit;
+    /* margin-top: 0px; */
+    color: #3f51b5;
+    font-weight: 700;
+}
+.user-img{
+    position: absolute;
+    top: -4px;
+
+}
+
+.head-div{
+    margin-left: 10px;
+    font-weight: 600;
+    color: #2e78e7;
+}

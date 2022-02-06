@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { TabComponent } from './tab/tab.component';
+// import { IonBottomSheetModule } from 'ion-bottom-sheet';
+
 
 
 @NgModule({
@@ -12,8 +15,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    // IonBottomSheetModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,TabComponent]
 })
 export class HomePageModule {}

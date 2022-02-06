@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
+import { TabComponent } from './tab/tab.component';
+
 
 const routes: Routes = [
   {
@@ -18,10 +20,16 @@ const routes: Routes = [
       {
         path: 'category',
         loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
-      }
+      },
+      {
+        path: 'controles',
+        loadChildren: () => import('./controles/controles.module').then( m => m.ControlesPageModule)
+      },
     ]
-  },
   
+  },
+  {path: 'tabs',component: TabComponent,},  
+
 ];
 
 @NgModule({
