@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CategoryPageRoutingModule } from './category-routing.module';
 
 import { CategoryPage } from './category.page';
+// import { IonBottomSheetModule } from 'ion-bottom-sheet';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CategoryPageRoutingModule
+    CategoryPageRoutingModule,
+    // IonBottomSheetModule
   ],
   declarations: [CategoryPage]
 })
