@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -13,7 +14,7 @@ export class LoginPage implements OnInit {
     password:''
   }
 
-  constructor(private _apiService: ApiService) { }
+  constructor(private _apiService: ApiService, private route:Router) { }
 
   ngOnInit() {
   }
@@ -22,6 +23,8 @@ export class LoginPage implements OnInit {
 
     this._apiService.loginPost(this.loginData).subscribe((result:any)=>{
       console.log(result);
+      this.route.navigate(['/home/profile'])
+   
     },(error:any)=>{
       console.log(error);
       
