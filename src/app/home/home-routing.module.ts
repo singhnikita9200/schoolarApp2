@@ -25,10 +25,18 @@ const routes: Routes = [
         path: 'controles',
         loadChildren: () => import('./controles/controles.module').then( m => m.ControlesPageModule)
       },
+      {
+        path: 'test-categories',
+        loadChildren: () => import('./test-categories/test-categories.module').then( m => m.TestCategoriesPageModule)
+      },
     ]
   
   },
-  {path: 'tabs',component: TabComponent,},  
+  // {path: 'tabs',component: TabComponent,},   {
+  //   path: 'test-categories',
+  //   loadChildren: () => import('./test-categories/test-categories.module').then( m => m.TestCategoriesPageModule)
+  // },
+ 
 
 ];
 
