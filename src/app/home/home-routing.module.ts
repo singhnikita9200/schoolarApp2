@@ -25,10 +25,23 @@ const routes: Routes = [
         path: 'controles',
         loadChildren: () => import('./controles/controles.module').then( m => m.ControlesPageModule)
       },
+      {
+        path: 'test-categories',
+        loadChildren: () => import('./test-categories/test-categories.module').then( m => m.TestCategoriesPageModule)
+      },
+      {
+        path: 'applies-chemistry',
+        loadChildren: () => import('./applies-chemistry/applies-chemistry.module').then( m => m.AppliesChemistryPageModule)
+      },
     ]
   
   },
-  {path: 'tabs',component: TabComponent,},  
+  
+  // {path: 'tabs',component: TabComponent,},   {
+  //   path: 'test-categories',
+  //   loadChildren: () => import('./test-categories/test-categories.module').then( m => m.TestCategoriesPageModule)
+  // },
+ 
 
 ];
 
